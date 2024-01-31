@@ -1,0 +1,62 @@
+body {
+    background-color: black;
+    color: yellow;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 10px;
+
+}
+
+input {
+    background-color: blueviolet;
+    color: white;
+    margin: 4px;
+    padding: 2px;
+    border-radius: 10px;
+    width: 180px;
+    border: none;
+    height: 20px;
+}
+
+input::placeholder {
+    color: white;
+    font-size: 10px;
+    padding: 2px;
+    opacity: 80%;
+}
+
+input[type="submit"] {
+    background-color: yellow;
+    height: 30px;
+    color: black;
+}
+
+input[type="submit"]:hover {
+    background-color: white;
+    transition: 0.2s;
+    cursor: pointer;
+    transform: scale(1.05);
+
+}
+
+h1 {
+    font-size: 20px;
+}
